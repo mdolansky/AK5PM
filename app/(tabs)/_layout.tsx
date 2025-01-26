@@ -38,7 +38,7 @@ export default function TabLayout() {
         options={{
           title: 'Analýza',
           headerShown: false,
-          tabBarIcon: ({ color }) => <TabBarIcon name="pie-chart" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="pie-chart" color={color} />
         }}
       />
     </Tabs>

@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Savings Purchase",
+    "category": "Transportation",
+    "price": 114.37,
+    "date": "2025-01-26T22:37:01.726484"
+  },
+  {
+    "name": "Entertainment Purchase",
+    "category": "Entertainment",
+    "price": 38.02,
+    "date": "2025-01-25T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Groceries",
+    "price": 61.83,
+    "date": "2025-01-24T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Entertainment",
+    "price": 32.82,
+    "date": "2025-01-23T22:37:01.726484"
+  },
+  {
+    "name": "Health Purchase",
+    "category": "Utilities",
+    "price": 30.14,
+    "date": "2025-01-22T22:37:01.726484"
+  },
+  {
+    "name": "Entertainment Purchase",
+    "category": "Groceries",
+    "price": 116.77,
+    "date": "2025-01-21T22:37:01.726484"
+  },
+  {
+    "name": "Shopping Purchase",
+    "category": "Utilities",
+    "price": 154.78,
+    "date": "2025-01-20T22:37:01.726484"
+  },
+  {
+    "name": "Savings Purchase",
+    "category": "Entertainment",
+    "price": 179.43,
+    "date": "2025-01-19T22:37:01.726484"
+  },
+  {
+    "name": "Entertainment Purchase",
+    "category": "Utilities",
+    "price": 46.11,
+    "date": "2025-01-18T22:37:01.726484"
+  },
+  {
+    "name": "Shopping Purchase",
+    "category": "Entertainment",
+    "price": 117.99,
+    "date": "2025-01-17T22:37:01.726484"
+  },
+  {
+    "name": "Entertainment Purchase",
+    "category": "Groceries",
+    "price": 66.27,
+    "date": "2025-01-16T22:37:01.726484"
+  },
+  {
+    "name": "Health Purchase",
+    "category": "Transportation",
+    "price": 98.17,
+    "date": "2025-01-15T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Health",
+    "price": 14.97,
+    "date": "2025-01-14T22:37:01.726484"
+  },
+  {
+    "name": "Savings Purchase",
+    "category": "Entertainment",
+    "price": 139.27,
+    "date": "2025-01-13T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Dining Out",
+    "price": 38.08,
+    "date": "2025-01-12T22:37:01.726484"
+  },
+  {
+    "name": "Savings Purchase",
+    "category": "Entertainment",
+    "price": 21.63,
+    "date": "2025-01-11T22:37:01.726484"
+  },
+  {
+    "name": "Shopping Purchase",
+    "category": "Dining Out",
+    "price": 58.4,
+    "date": "2025-01-10T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Utilities",
+    "price": 35.31,
+    "date": "2025-01-09T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Utilities",
+    "price": 139.94,
+    "date": "2025-01-08T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Groceries",
+    "price": 53.27,
+    "date": "2025-01-07T22:37:01.726484"
+  },
+  {
+    "name": "Utilities Purchase",
+    "category": "Utilities",
+    "price": 178.84,
+    "date": "2025-01-06T22:37:01.726484"
+  },
+  {
+    "name": "Shopping Purchase",
+    "category": "Utilities",
+    "price": 71.21,
+    "date": "2025-01-05T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Entertainment",
+    "price": 197.71,
+    "date": "2025-01-04T22:37:01.726484"
+  },
+  {
+    "name": "Savings Purchase",
+    "category": "Shopping",
+    "price": 106.37,
+    "date": "2025-01-03T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Transportation",
+    "price": 58.52,
+    "date": "2025-01-02T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Transportation",
+    "price": 108.2,
+    "date": "2025-01-01T22:37:01.726484"
+  },
+  {
+    "name": "Savings Purchase",
+    "category": "Savings",
+    "price": 103.06,
+    "date": "2024-12-31T22:37:01.726484"
+  },
+  {
+    "name": "Health Purchase",
+    "category": "Utilities",
+    "price": 136.63,
+    "date": "2024-12-30T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Utilities",
+    "price": 106.32,
+    "date": "2024-12-29T22:37:01.726484"
+  },
+  {
+    "name": "Transportation Purchase",
+    "category": "Shopping",
+    "price": 193.54,
+    "date": "2024-12-28T22:37:01.726484"
+  },
+  {
+    "name": "Utilities Purchase",
+    "category": "Entertainment",
+    "price": 87.74,
+    "date": "2024-12-27T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Savings",
+    "price": 53.53,
+    "date": "2024-12-26T22:37:01.726484"
+  },
+  {
+    "name": "Shopping Purchase",
+    "category": "Health",
+    "price": 72.44,
+    "date": "2024-12-25T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Utilities",
+    "price": 187.02,
+    "date": "2024-12-24T22:37:01.726484"
+  },
+  {
+    "name": "Transportation Purchase",
+    "category": "Shopping",
+    "price": 31.67,
+    "date": "2024-12-23T22:37:01.726484"
+  },
+  {
+    "name": "Entertainment Purchase",
+    "category": "Savings",
+    "price": 77.13,
+    "date": "2024-12-22T22:37:01.726484"
+  },
+  {
+    "name": "Transportation Purchase",
+    "category": "Dining Out",
+    "price": 40.6,
+    "date": "2024-12-21T22:37:01.726484"
+  },
+  {
+    "name": "Health Purchase",
+    "category": "Utilities",
+    "price": 20.13,
+    "date": "2024-12-20T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Transportation",
+    "price": 21.81,
+    "date": "2024-12-19T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Health",
+    "price": 52.28,
+    "date": "2024-12-18T22:37:01.726484"
+  },
+  {
+    "name": "Entertainment Purchase",
+    "category": "Utilities",
+    "price": 181.27,
+    "date": "2024-12-17T22:37:01.726484"
+  },
+  {
+    "name": "Utilities Purchase",
+    "category": "Dining Out",
+    "price": 50.24,
+    "date": "2024-12-16T22:37:01.726484"
+  },
+  {
+    "name": "Savings Purchase",
+    "category": "Transportation",
+    "price": 58.92,
+    "date": "2024-12-15T22:37:01.726484"
+  },
+  {
+    "name": "Transportation Purchase",
+    "category": "Groceries",
+    "price": 23.72,
+    "date": "2024-12-14T22:37:01.726484"
+  },
+  {
+    "name": "Savings Purchase",
+    "category": "Entertainment",
+    "price": 18.08,
+    "date": "2024-12-13T22:37:01.726484"
+  },
+  {
+    "name": "Shopping Purchase",
+    "category": "Shopping",
+    "price": 135.76,
+    "date": "2024-12-12T22:37:01.726484"
+  },
+  {
+    "name": "Dining Out Purchase",
+    "category": "Utilities",
+    "price": 197.09,
+    "date": "2024-12-11T22:37:01.726484"
+  },
+  {
+    "name": "Health Purchase",
+    "category": "Health",
+    "price": 160.51,
+    "date": "2024-12-10T22:37:01.726484"
+  },
+  {
+    "name": "Transportation Purchase",
+    "category": "Entertainment",
+    "price": 27.31,
+    "date": "2024-12-09T22:37:01.726484"
+  },
+  {
+    "name": "Entertainment Purchase",
+    "category": "Transportation",
+    "price": 58.09,
+    "date": "2024-12-08T22:37:01.726484"
+  },
+  {
+    "name": "Transportation Purchase",
+    "category": "Transportation",
+    "price": 191.87,
+    "date": "2024-12-07T22:37:01.726484"
+  },
+  {
+    "name": "Savings Purchase",
+    "category": "Transportation",
+    "price": 11.23,
+    "date": "2024-12-06T22:37:01.726484"
+  },
+  {
+    "name": "Health Purchase",
+    "category": "Entertainment",
+    "price": 136.43,
+    "date": "2024-12-05T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Savings",
+    "price": 80.43,
+    "date": "2024-12-04T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Shopping",
+    "price": 54.17,
+    "date": "2024-12-03T22:37:01.726484"
+  },
+  {
+    "name": "Utilities Purchase",
+    "category": "Transportation",
+    "price": 153.2,
+    "date": "2024-12-02T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Transportation",
+    "price": 126.82,
+    "date": "2024-12-01T22:37:01.726484"
+  },
+  {
+    "name": "Utilities Purchase",
+    "category": "Transportation",
+    "price": 96.88,
+    "date": "2024-11-30T22:37:01.726484"
+  },
+  {
+    "name": "Entertainment Purchase",
+    "category": "Transportation",
+    "price": 69.72,
+    "date": "2024-11-29T22:37:01.726484"
+  },
+  {
+    "name": "Groceries Purchase",
+    "category": "Transportation",
+    "price": 113.35,
+    "date": "2024-11-28T22:37:01.726484"
+  }
+]

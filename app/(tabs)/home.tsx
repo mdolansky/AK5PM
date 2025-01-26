@@ -15,6 +15,7 @@ export default function HomeScreen() {
   const currentDate = new Date();
   const monthName = monthNames[currentDate.getMonth()];
   const [currency, setCurrency] = useState('CZK');
+  const usdExchangeRate = parseFloat(exchangeRate.data['CZK'].toString()).toFixed(2);
 
   const currentMonthSpendingsUSD = parseFloat((currentMonthSpendings / exchangeRate.data['CZK']).toString()).toFixed(2);
   const currentDaySpendingsUSD = parseFloat((currentDaySpendings / exchangeRate.data['CZK']).toString()).toFixed(2);
@@ -53,6 +54,11 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
+      <View style={styles.exchangeRateContainer}>
+        <Text style={styles.title}>Aktuální kurz</Text>
+        <Text style={styles.exchangeRateText}>CZK:USD</Text>
+        <Text style={styles.exchangeRateText}>{usdExchangeRate}:1</Text>
+      </View>
       <TouchableOpacity style={styles.currencyButton} onPress={() => setCurrency(currency === 'CZK' ? 'USD' : 'CZK')}>
         <Text style={styles.currencyButtonText}>{currency}</Text>
       </TouchableOpacity>
@@ -66,8 +72,6 @@ export default function HomeScreen() {
       <Text style={styles.amount}>
         {currency === 'CZK' ? `${currentDaySpendings} Kč` : `$${currentDaySpendingsUSD}`}
       </Text>
-
-      <View style={styles.separator} />
 
       <TouchableOpacity style={styles.addTransactionButton}>
         <Link href="../addTransactionModal" asChild>
@@ -106,17 +110,21 @@ const styles = StyleSheet.create({
     color: '#333',
     marginVertical: 12,
   },
+  exchangeRateContainer: {
+    backgroundColor: '#f9f9f9',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  exchangeRateText: {
+    fontSize: 16,
+    fontWeight: '400',
+    color: '#333',
+  },
   amount: {
     fontSize: 20,
     fontWeight: '400',
     color: '#007EA7',
     marginBottom: 16,
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-    backgroundColor: '#ccc',
   },
   addTransactionButton: {
     position: 'absolute',

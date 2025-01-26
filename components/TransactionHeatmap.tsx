@@ -53,10 +53,10 @@ const TransactionsHeatmap: React.FC<TransactionsHeatmapProps> = ({ transactions,
           },
         })}
         chartConfig={{
-          backgroundColor: '#fff',
-          backgroundGradientFrom: '#fff',
-          backgroundGradientTo: '#fff',
-          color: (opacity = 1) => `rgba(134, 65, 244, ${opacity})`,
+          backgroundColor: '#f9f9f9',
+          backgroundGradientFrom: '#f9f9f9',
+          backgroundGradientTo: '#f9f9f9',
+          color: (opacity = 1) => `rgba(0, 126, 167, ${opacity})`,
           labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
         }}
       />

@@ -43,20 +43,15 @@ const TransactionsLineChart: React.FC<TransactionsLineChartProps> = ({ transacti
         withDots={false}
         withVerticalLines={false}
         chartConfig={{
-          backgroundGradientFrom: '#fff',
-          backgroundGradientTo: '#fff',
+          backgroundGradientFrom: '#f9f9f9',
+          backgroundGradientTo: '#f9f9f9',
           decimalPlaces: 0,
           barPercentage: 0.3,
-          color: (opacity = 1) => `rgba(134, 65, 244, ${opacity})`,
+          color: (opacity = 1) => `rgba(0, 126, 167, ${opacity})`,
           labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
           style: {
             borderRadius: 16,
-          },
-          propsForDots: {
-            r: '6',
-            strokeWidth: '2',
-            stroke: '#ffa726',
-          },
+          }
         }}
       />
     </View>

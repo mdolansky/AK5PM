@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View } from '@/components/Themed';
-import { StyleSheet, ScrollView, Dimensions, Button } from 'react-native';
+import { StyleSheet, ScrollView, Dimensions, TouchableOpacity } from 'react-native';
 import { getTransactions } from '@/components/storageHandler';
 import { TransactionType } from '@/components/types';
 import { Picker } from '@react-native-picker/picker';
@@ -8,7 +8,8 @@ import { monthNames } from '@/constants/DateLocale';
 import TransactionsLineChart from '@/components/TransactionsLineChart';
 import TransactionsPieChart from '@/components/TransactionsPieChart';
 import TransactionsHeatmap from '@/components/TransactionHeatmap';
-import { useFocusEffect } from 'expo-router';
+import { Link, useFocusEffect } from 'expo-router';
+import { FontAwesome } from '@expo/vector-icons';
 
 const screenWidth = Dimensions.get('window').width;
 
@@ -25,7 +26,7 @@ export default function HistoryScreen() {
         const allTransactions = await getTransactions();
         setTransactions(allTransactions);
       };
-  
+
       fetchTransactions();
     }, [])
   );
@@ -62,9 +63,13 @@ export default function HistoryScreen() {
     <ScrollView style={styles.container}>
       <View style={styles.headerContainer}>
         <Text style={styles.title}>Analýza</Text>
+        <TouchableOpacity style={{ position: 'absolute', right: 4, top: 4 }}>
+          <Link href="../modal" asChild>
+            <FontAwesome name="wrench" size={24} color="#333" /> 
+          </Link>
+        </TouchableOpacity>
       </View>
 
-      {/* Picker pro výběr měsíce a roku */}
       <View style={styles.pickerContainer}>
         <Picker
           selectedValue={selectedYear}
@@ -87,16 +92,29 @@ export default function HistoryScreen() {
         </Picker>
       </View>
 
-      {/* Tlačítka pro změnu typu grafu */}
-      <View style={styles.headerContainer}>
-        <View style={styles.buttonContainer}>
-          <Button title="Line Chart" onPress={() => setChartType('Line')} />
-          <Button title="Pie Chart" onPress={() => setChartType('Pie')} />
-          <Button title="Heatmap" onPress={() => setChartType('Heatmap')} />
-        </View>
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity
+          style={[styles.chartButton, chartType === 'Line' && styles.activeButton]}
+          onPress={() => setChartType('Line')}
+        >
+          <Text style={styles.chartButtonText}>Line Chart</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={[styles.chartButton, chartType === 'Pie' && styles.activeButton]}
+          onPress={() => setChartType('Pie')}
+        >
+          <Text style={styles.chartButtonText}>Pie Chart</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={[styles.chartButton, chartType === 'Heatmap' && styles.activeButton]}
+          onPress={() => setChartType('Heatmap')}
+        >
+          <Text style={styles.chartButtonText}>Heatmap</Text>
+        </TouchableOpacity>
       </View>
 
-      {/* Graf podle výběru */}
       {renderChart()}
     </ScrollView>
   );
@@ -106,32 +124,52 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#fff',
+    backgroundColor: '#f9f9f9',
   },
   headerContainer: {
-    flexDirection: 'column',
+    backgroundColor: '#f9f9f9',
     alignItems: 'center',
     marginBottom: 16,
   },
   title: {
     fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 16,
-  },
-  buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
-    marginBottom: 16,
+    fontWeight: '600',
+    color: '#333',
   },
   pickerContainer: {
+    backgroundColor: '#f9f9f9',
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 16,
   },
   picker: {
     height: 50,
-    backgroundColor: '#f9f9f9',
-    width: (screenWidth - 64) / 2,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    width: (screenWidth - 48) / 2,
+    paddingHorizontal: 8,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 16,
+  },
+  chartButton: {
+    flex: 1,
+    backgroundColor: '#007EA7',
+    paddingVertical: 12,
+    marginHorizontal: 4,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  activeButton: {
+    backgroundColor: '#005F73',
+  },
+  chartButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
   },
 });
